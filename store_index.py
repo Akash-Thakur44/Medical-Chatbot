@@ -37,7 +37,7 @@ if not pc.has_index(index_name):
 index = pc.Index(index_name)
 
 docsearch = PineconeVectorStore.from_documents(
-    documents = texts_chunk,
+    documents = text_chunks,
     embedding=embeddings,
     index_name=index_name
 )
